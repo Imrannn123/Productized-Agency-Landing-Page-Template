@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StudioFlow — Unlimited Design & Web Dev Subscription</title>
+  <meta name="description" content="Productized design and web development agency on a flat monthly subscription. Pause or cancel anytime." />
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+          colors: {
+            accent: {
+              500: '#ff5500',
+              600: '#e04800',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background-color: #fafaf9; color: #18181b; }
+  </style>
+</head>
+<body class="antialiased selection:bg-accent-500 selection:text-white">
+
+  <!-- ==================== 1. STICKY NAVBAR ==================== -->
+  <header class="sticky top-0 z-50 bg-[#fafaf9]/85 backdrop-blur-md border-b border-stone-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2 font-extrabold text-xl tracking-tight text-zinc-900">
+        <span class="w-7 h-7 rounded-lg bg-zinc-900 text-white flex items-center justify-center text-sm font-black">S</span>
+        StudioFlow
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-600">
+        <a href="#how-it-works" class="hover:text-zinc-900 transition">How it works</a>
+        <a href="#work" class="hover:text-zinc-900 transition">Recent work</a>
+        <a href="#benefits" class="hover:text-zinc-900 transition">Benefits</a>
+        <a href="#pricing" class="hover:text-zinc-900 transition">Pricing</a>
+        <a href="#faq" class="hover:text-zinc-900 transition">FAQ</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="#pricing" class="text-sm font-semibold bg-zinc-900 hover:bg-zinc-800 text-white px-4 py-2 rounded-full transition">
+          See Plans
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== 2. HERO SECTION ==================== -->
+  <section class="pt-20 pb-20 sm:pt-28 sm:pb-24 px-4 sm:px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <!-- Availability Badge -->
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-stone-200 shadow-sm text-xs font-semibold text-zinc-700 mb-8">
+        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+        2 client spots available for this month
+      </div>
+
+      <!-- High-Impact Headline -->
+      <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-zinc-900 leading-[1.08]">
+        A senior design & dev partner for <span class="text-accent-500">one flat monthly fee.</span>
+      </h1>
+
+      <!-- Subheadline -->
+      <p class="mt-6 text-lg sm:text-xl text-zinc-600 max-w-2xl mx-auto leading-relaxed">
+        Skip unreliable freelancers and $120k/yr full-time hires. Submit unlimited requests, get updates every 48 hours, and pause or cancel anytime.
+      </p>
+
+      <!-- Dual CTAs -->
+      <div class="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#pricing" class="w-full sm:w-auto px-8 py-4 rounded-full bg-zinc-900 hover:bg-zinc-800 text-white font-bold text-base shadow-lg shadow-zinc-900/15 transition">
+          View Subscription Plans
+        </a>
+        <a href="#book-call" class="w-full sm:w-auto px-8 py-4 rounded-full bg-white hover:bg-stone-100 border border-stone-300 text-zinc-900 font-bold text-base transition">
+          Book a 15-Min Intro Call
+        </a>
+      </div>
+
+      <!-- Trust Micro-Copy -->
+      <p class="mt-5 text-xs font-medium text-zinc-500">
+        No contracts • Average 48-hour delivery • 100% async via Trello & Slack
+      </p>
+    </div>
+
+    <!-- Showcase / Portfolio Preview Strip -->
+    <div id="work" class="mt-16 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="group rounded-2xl bg-white border border-stone-200 p-4 shadow-sm hover:shadow-md transition">
+        <div class="aspect-[4/3] rounded-xl bg-gradient-to-br from-zinc-900 to-zinc-800 p-6 flex flex-col justify-between text-white">
+          <span class="text-xs font-mono text-zinc-400">FINTECH SAAS</span>
+          <div>
+            <p class="text-lg font-bold">NovaPay Dashboard</p>
+            <p class="text-xs text-zinc-400 mt-1">UI/UX Redesign + Marketing Site</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="group rounded-2xl bg-white border border-stone-200 p-4 shadow-sm hover:shadow-md transition">
+        <div class="aspect-[4/3] rounded-xl bg-gradient-to-br from-accent-500 to-amber-500 p-6 flex flex-col justify-between text-white">
+          <span class="text-xs font-mono text-orange-100">AI STARTUP</span>
+          <div>
+            <p class="text-lg font-bold">SynthVoice Launch</p>
+            <p class="text-xs text-orange-100 mt-1">Brand Identity + Framer Site</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="group rounded-2xl bg-white border border-stone-200 p-4 shadow-sm hover:shadow-md transition">
+        <div class="aspect-[4/3] rounded-xl bg-gradient-to-br from-emerald-800 to-teal-900 p-6 flex flex-col justify-between text-white">
+          <span class="text-xs font-mono text-emerald-200">E-COMMERCE</span>
+          <div>
+            <p class="text-lg font-bold">Kanso Matcha Co.</p>
+            <p class="text-xs text-emerald-200 mt-1">Packaging + High-Converting Store</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 3. HOW IT WORKS (3 STEPS) ==================== -->
+  <section id="how-it-works" class="py-20 bg-white border-y border-stone-200 px-4 sm:px-6">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-widest text-accent-500">Simple Workflow</span>
+        <h2 class="mt-2 text-3xl sm:text-4xl font-extrabold text-zinc-900">How your subscription works</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div class="p-6 rounded-2xl bg-[#fafaf9] border border-stone-200">
+          <div class="w-10 h-10 rounded-full bg-zinc-900 text-white font-bold flex items-center justify-center mb-5">1</div>
+          <h3 class="text-lg font-bold text-zinc-900">Subscribe & get your board</h3>
+          <p class="mt-2 text-sm text-zinc-600 leading-relaxed">
+            Pick a plan and get instant access to your private Trello board within 5 minutes. Add as many tasks to your backlog as you want.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-[#fafaf9] border border-stone-200">
+          <div class="w-10 h-10 rounded-full bg-zinc-900 text-white font-bold flex items-center justify-center mb-5">2</div>
+          <h3 class="text-lg font-bold text-zinc-900">Receive work in 48 hours</h3>
+          <p class="mt-2 text-sm text-zinc-600 leading-relaxed">
+            We tackle your active request one by one, delivering polished updates every 1–2 business days with async Loom walkthroughs.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-[#fafaf9] border border-stone-200">
+          <div class="w-10 h-10 rounded-full bg-zinc-900 text-white font-bold flex items-center justify-center mb-5">3</div>
+          <h3 class="text-lg font-bold text-zinc-900">Revise until 100% happy</h3>
+          <p class="mt-2 text-sm text-zinc-600 leading-relaxed">
+            Need tweaks? We iterate until you love it, then immediately move on to the next item in your queue. Pause billing anytime.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 4. MEMBERSHIP BENEFITS ==================== -->
+  <section id="benefits" class="py-24 max-w-5xl mx-auto px-4 sm:px-6">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-zinc-900">Why founders switch to us</h2>
+      <p class="mt-3 text-zinc-600">Everything you expect from an in-house team, without the overhead.</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="p-6 rounded-2xl bg-white border border-stone-200">
+        <h3 class="font-bold text-zinc-900 text-base">⚡ Fast 48h Turnaround</h3>
+        <p class="mt-2 text-sm text-zinc-600">No waiting weeks for initial drafts. Most requests are delivered in 2 business days or less.</p>
+      </div>
+      <div class="p-6 rounded-2xl bg-white border border-stone-200">
+        <h3 class="font-bold text-zinc-900 text-base">💳 Fixed Monthly Rate</h3>
+        <p class="mt-2 text-sm text-zinc-600">Zero hourly billing surprises or scope-creep invoices. Pay the exact same flat fee every month.</p>
+      </div>
+      <div class="p-6 rounded-2xl bg-white border border-stone-200">
+        <h3 class="font-bold text-zinc-900 text-base">⏸️ Pause Anytime</h3>
+        <p class="mt-2 text-sm text-zinc-600">Ran out of tasks? Pause your subscription and bank your remaining days for whenever you need us next.</p>
+      </div>
+      <div class="p-6 rounded-2xl bg-white border border-stone-200">
+        <h3 class="font-bold text-zinc-900 text-base">🎯 Senior-Only Talent</h3>
+        <p class="mt-2 text-sm text-zinc-600">Your projects are never outsourced to junior freelancers. Work directly with principal designers.</p>
+      </div>
+      <div class="p-6 rounded-2xl bg-white border border-stone-200">
+        <h3 class="font-bold text-zinc-900 text-base">🚫 Zero Status Meetings</h3>
+        <p class="mt-2 text-sm text-zinc-600">We communicate via crisp async Loom videos so your calendar stays completely free.</p>
+      </div>
+      <div class="p-6 rounded-2xl bg-white border border-stone-200">
+        <h3 class="font-bold text-zinc-900 text-base">🔒 100% IP Ownership</h3>
+        <p class="mt-2 text-sm text-zinc-600">Every Figma file, GitHub repo, and asset we create belongs exclusively to your company.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 5. PRODUCTIZED PRICING ==================== -->
+  <section id="pricing" class="py-24 bg-zinc-900 text-white px-4 sm:px-6">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-widest text-accent-500">Membership Tiers</span>
+        <h2 class="mt-2 text-3xl sm:text-4xl font-extrabold">One subscription. Unlimited scale.</h2>
+        <p class="mt-3 text-zinc-400">Pause or cancel anytime with one click. No long-term commitments.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <!-- Standard Plan -->
+        <div class="p-8 sm:p-10 rounded-3xl bg-zinc-800/70 border border-zinc-700 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between">
+              <h3 class="text-xl font-bold">Growth</h3>
+              <span class="px-3 py-1 rounded-full bg-zinc-700 text-xs font-semibold text-zinc-200">Most Popular</span>
+            </div>
+            <p class="mt-2 text-sm text-zinc-400">One active request at a time. Ideal for startups & creators.</p>
+            <div class="mt-6 flex items-baseline gap-2">
+              <span class="text-4xl sm:text-5xl font-extrabold">$2,495</span>
+              <span class="text-sm text-zinc-400">/month</span>
+            </div>
+
+            <ul class="mt-8 space-y-3.5 text-sm text-zinc-200">
+              <li class="flex items-center gap-3"><span class="text-accent-500 font-bold">✓</span> One request at a time</li>
+              <li class="flex items-center gap-3"><span class="text-accent-500 font-bold">✓</span> Average 48-hour delivery</li>
+              <li class="flex items-center gap-3"><span class="text-accent-500 font-bold">✓</span> Unlimited brands & users</li>
+              <li class="flex items-center gap-3"><span class="text-accent-500 font-bold">✓</span> Unlimited revisions</li>
+              <li class="flex items-center gap-3"><span class="text-accent-500 font-bold">✓</span> Pause or cancel anytime</li>
+            </ul>
+          </div>
+
+          <div class="mt-9 space-y-3">
+            <a href="#" class="block w-full py-3.5 px-6 rounded-full bg-accent-500 hover:bg-accent-600 text-center font-bold text-white transition">
+              Subscribe Now
+            </a>
+            <a href="#book-call" class="block w-full py-2.5 text-center text-xs font-semibold text-zinc-400 hover:text-white transition">
+              Or book a quick intro call &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- Pro / Double Speed Plan -->
+        <div class="p-8 sm:p-10 rounded-3xl bg-white text-zinc-900 flex flex-col justify-between shadow-2xl">
+          <div>
+            <div class="flex items-center justify-between">
+              <h3 class="text-xl font-bold">Scale (2x Speed)</h3>
+              <span class="px-3 py-1 rounded-full bg-orange-100 text-accent-600 text-xs font-bold">Fastest</span>
+            </div>
+            <p class="mt-2 text-sm text-zinc-600">Two active requests simultaneously for high-velocity teams.</p>
+            <div class="mt-6 flex items-baseline gap-2">
+              <span class="text-4xl sm:text-5xl font-extrabold">$3,995</span>
+              <span class="text-sm text-zinc-500">/month</span>
+            </div>
+
+            <ul class="mt-8 space-y-3.5 text-sm text-zinc-700">
+              <li class="flex items-center gap-3"><span class="text-accent-500 font-bold">✓</span> <strong>Two requests at a time</strong></li>
+              <li class="flex items-center gap-3"><span class="text-accent-500 font-bold">✓</span> Priority 24–48h delivery</li>
+              <li class="flex items-center gap-3"><span class="text-accent-500 font-bold">✓</span> Dedicated Slack channel</li>
+              <li class="flex items-center gap-3"><span class="text-accent-500 font-bold">✓</span> Frontend code (Tailwind / React)</li>
+              <li class="flex items-center gap-3"><span class="text-accent-500 font-bold">✓</span> Pause or cancel anytime</li>
+            </ul>
+          </div>
+
+          <div class="mt-9 space-y-3">
+            <a href="#" class="block w-full py-3.5 px-6 rounded-full bg-zinc-900 hover:bg-zinc-800 text-center font-bold text-white transition">
+              Subscribe Now
+            </a>
+            <a href="#book-call" class="block w-full py-2.5 text-center text-xs font-semibold text-zinc-500 hover:text-zinc-900 transition">
+              Or book a quick intro call &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 6. BOOK A CALL CTA BOX ==================== -->
+  <section id="book-call" class="py-20 px-4 sm:px-6">
+    <div class="max-w-4xl mx-auto rounded-3xl bg-white border border-stone-200 p-8 sm:p-12 text-center shadow-sm">
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-zinc-900">Not sure if a subscription fits your roadmap?</h2>
+      <p class="mt-3 text-zinc-600 max-w-xl mx-auto">
+        Book a zero-pressure 15-minute discovery chat. We’ll walk through how our async queue works and see if we’re a match.
+      </p>
+      <!-- Replace href with your Cal.com or Calendly link -->
+      <a href="https://cal.com" target="_blank" rel="noopener" class="mt-7 inline-block px-8 py-4 rounded-full bg-zinc-900 hover:bg-zinc-800 text-white font-bold text-sm transition">
+        Schedule 15-Min Intro Call &rarr;
+      </a>
+    </div>
+  </section>
+
+  <!-- ==================== 7. FAQ ACCORDION ==================== -->
+  <section id="faq" class="pb-24 max-w-3xl mx-auto px-4 sm:px-6">
+    <h2 class="text-3xl font-extrabold text-zinc-900 text-center mb-10">Common questions</h2>
+    <div class="space-y-3">
+      <div class="rounded-2xl bg-white border border-stone-200 overflow-hidden">
+        <button class="faq-btn w-full px-6 py-4 text-left flex items-center justify-between font-bold text-zinc-900">
+          <span>How does the pause feature actually work?</span>
+          <span class="faq-icon text-zinc-500 text-xl">+</span>
+        </button>
+        <div class="faq-body hidden px-6 pb-5 text-sm text-zinc-600 leading-relaxed">
+          Billing cycles are based on 31-day periods. If you use the service for 15 days and then pause your subscription, you still have 16 days of service banked to use anytime in the future.
+        </div>
+      </div>
+
+      <div class="rounded-2xl bg-white border border-stone-200 overflow-hidden">
+        <button class="faq-btn w-full px-6 py-4 text-left flex items-center justify-between font-bold text-zinc-900">
+          <span>What does "unlimited requests" really mean?</span>
+          <span class="faq-icon text-zinc-500 text-xl">+</span>
+        </button>
+        <div class="faq-body hidden px-6 pb-5 text-sm text-zinc-600 leading-relaxed">
+          Once subscribed, you can add as many tasks to your queue as you'd like. We work through them actively one at a time (or two at a time on the Scale plan) in the exact priority order you set.
+        </div>
+      </div>
+
+      <div class="rounded-2xl bg-white border border-stone-200 overflow-hidden">
+        <button class="faq-btn w-full px-6 py-4 text-left flex items-center justify-between font-bold text-zinc-900">
+          <span>Are there any refunds?</span>
+          <span class="faq-icon text-zinc-500 text-xl">+</span>
+        </button>
+        <div class="faq-body hidden px-6 pb-5 text-sm text-zinc-600 leading-relaxed">
+          Due to the custom, high-touch nature of our work, we do not issue refunds once work has started—however, you are completely free to pause or cancel your renewal at any moment.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 8. FOOTER ==================== -->
+  <footer class="border-t border-stone-200 py-10 px-4 sm:px-6 text-sm text-zinc-500">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="font-bold text-zinc-900">StudioFlow Agency</p>
+      <div class="flex gap-6">
+        <a href="case-study.html">NovaPay Dashboard</a>
+        <a href="legal.html">terms & Privacy</a>
+        <a href="#book-call" class="hover:text-zinc-900">Contact</a>
+      </div>
+      <p>&copy; 2026 StudioFlow. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Minimal FAQ Toggle Script -->
+  <script>
+    document.querySelectorAll('.faq-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const body = btn.nextElementSibling;
+        const icon = btn.querySelector('.faq-icon');
+        body.classList.toggle('hidden');
+        icon.textContent = body.classList.contains('hidden') ? '+' : '−';
+      });
+    });
+  </script>
+</body>
+</html>

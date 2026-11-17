@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Case Study: NovaPay Redesign — StudioFlow</title>
+  <meta name="description" content="How StudioFlow redesigned NovaPay's onboarding and marketing site in 14 days, increasing trial conversions by 42%." />
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+          colors: {
+            accent: {
+              500: '#ff5500',
+              600: '#e04800',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background-color: #fafaf9; color: #18181b; }
+  </style>
+</head>
+<body class="antialiased selection:bg-accent-500 selection:text-white">
+
+  <!-- ==================== STICKY NAVBAR ==================== -->
+  <header class="sticky top-0 z-50 bg-[#fafaf9]/85 backdrop-blur-md border-b border-stone-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2 font-extrabold text-xl tracking-tight text-zinc-900">
+        <span class="w-7 h-7 rounded-lg bg-zinc-900 text-white flex items-center justify-center text-sm font-black">S</span>
+        StudioFlow
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-600">
+        <a href="index.html#how-it-works" class="hover:text-zinc-900 transition">How it works</a>
+        <a href="index.html#work" class="text-zinc-900 font-semibold transition">Recent work</a>
+        <a href="index.html#benefits" class="hover:text-zinc-900 transition">Benefits</a>
+        <a href="index.html#pricing" class="hover:text-zinc-900 transition">Pricing</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="index.html#pricing" class="text-sm font-semibold bg-zinc-900 hover:bg-zinc-800 text-white px-4 py-2 rounded-full transition">
+          See Plans
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== CASE STUDY HERO ==================== -->
+  <main class="pt-14 pb-24 px-4 sm:px-6">
+    <div class="max-w-4xl mx-auto">
+      <!-- Back Link -->
+      <a href="index.html#work" class="inline-flex items-center gap-2 text-sm font-semibold text-zinc-500 hover:text-zinc-900 transition mb-8">
+        &larr; Back to all projects
+      </a>
+
+      <!-- Client Tag & Headline -->
+      <div class="flex flex-wrap items-center gap-3 mb-4">
+        <span class="px-3 py-1 rounded-full bg-orange-100 text-accent-600 text-xs font-bold uppercase tracking-wider">Fintech SaaS</span>
+        <span class="text-xs font-medium text-zinc-500">Turnaround: 14 Business Days</span>
+      </div>
+
+      <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-zinc-900 leading-[1.12]">
+        How NovaPay boosted trial signups by <span class="text-accent-500">+42%</span> with a complete brand & web overhaul.
+      </h1>
+
+      <p class="mt-5 text-lg text-zinc-600 leading-relaxed">
+        NovaPay came to StudioFlow with a dated template website and high drop-off on their pricing page. Over two weeks on our Growth subscription, we rebuilt their visual identity, marketing site, and onboarding flow.
+      </p>
+
+      <!-- Key Metrics Bar -->
+      <div class="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div class="p-6 rounded-2xl bg-white border border-stone-200">
+          <p class="text-3xl font-extrabold text-zinc-900">+42%</p>
+          <p class="mt-1 text-sm text-zinc-600">Increase in paid trial signups</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white border border-stone-200">
+          <p class="text-3xl font-extrabold text-zinc-900">14 Days</p>
+          <p class="mt-1 text-sm text-zinc-600">From kickoff to live production</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white border border-stone-200">
+          <p class="text-3xl font-extrabold text-zinc-900">99 / 100</p>
+          <p class="mt-1 text-sm text-zinc-600">Google Lighthouse speed score</p>
+        </div>
+      </div>
+
+      <!-- Large Featured Mockup Banner -->
+      <div class="mt-10 rounded-3xl bg-zinc-900 p-8 sm:p-12 text-white shadow-xl">
+        <div class="flex items-center justify-between border-b border-zinc-800 pb-4 mb-8">
+          <div class="flex items-center gap-2">
+            <span class="w-3 h-3 rounded-full bg-zinc-700"></span>
+            <span class="w-3 h-3 rounded-full bg-zinc-700"></span>
+            <span class="w-3 h-3 rounded-full bg-zinc-700"></span>
+          </div>
+          <span class="text-xs font-mono text-zinc-400">novapay.finance — Final Production UI</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-widest text-accent-500">Deliverables</span>
+            <h2 class="mt-2 text-2xl font-bold">Full Design System + Frontend Code</h2>
+            <ul class="mt-4 space-y-2.5 text-sm text-zinc-300">
+              <li>• Custom Figma component library (60+ components)</li>
+              <li>• 5 responsive marketing pages built in Tailwind CSS</li>
+              <li>• Interactive ROI & fee savings calculator</li>
+              <li>• Custom dark-mode product UI illustrations</li>
+            </ul>
+          </div>
+          <div class="rounded-2xl bg-zinc-800/80 border border-zinc-700 p-6">
+            <p class="text-xs font-mono text-emerald-400 mb-2">CONVERSION IMPACT</p>
+            <div class="space-y-4">
+              <div>
+                <div class="flex justify-between text-xs mb-1">
+                  <span class="text-zinc-400">Before Redesign</span>
+                  <span class="font-bold">2.4%</span>
+                </div>
+                <div class="w-full h-2.5 rounded-full bg-zinc-700">
+                  <div class="w-[35%] h-2.5 rounded-full bg-zinc-500"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between text-xs mb-1">
+                  <span class="text-white font-semibold">After StudioFlow</span>
+                  <span class="font-bold text-emerald-400">3.41% (+42%)</span>
+                </div>
+                <div class="w-full h-2.5 rounded-full bg-zinc-700">
+                  <div class="w-[78%] h-2.5 rounded-full bg-accent-500"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Before vs After Breakdown -->
+      <div class="mt-14 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="p-7 rounded-2xl bg-white border border-stone-200">
+          <span class="text-xs font-bold uppercase tracking-wider text-zinc-400">The Challenge (Before)</span>
+          <h3 class="mt-2 text-xl font-bold text-zinc-900">Cluttered messaging & slow load times</h3>
+          <p class="mt-3 text-sm text-zinc-600 leading-relaxed">
+            Visitors couldn't tell what NovaPay actually did within the first 5 seconds. Their previous agency left them with a bloated WordPress theme that took 4.8 seconds to load on mobile.
+          </p>
+        </div>
+
+        <div class="p-7 rounded-2xl bg-white border border-stone-200">
+          <span class="text-xs font-bold uppercase tracking-wider text-accent-500">The Solution (After)</span>
+          <h3 class="mt-2 text-xl font-bold text-zinc-900">Sharp positioning & instant UI clarity</h3>
+          <p class="mt-3 text-sm text-zinc-600 leading-relaxed">
+            We rewrote their above-the-fold value proposition, replaced heavy stock videos with crisp interactive UI previews, and shipped clean semantic HTML/Tailwind code.
+          </p>
+        </div>
+      </div>
+
+      <!-- Client Testimonial Quote -->
+      <div class="mt-12 p-8 sm:p-10 rounded-3xl bg-white border border-stone-200">
+        <p class="text-lg sm:text-xl font-semibold text-zinc-900 leading-relaxed">
+          “Working with StudioFlow felt like adding two senior product designers to our team overnight. Zero pointless meetings—just rapid, thoughtful updates every 48 hours.”
+        </p>
+        <div class="mt-6 flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-zinc-900 text-white font-bold flex items-center justify-center text-sm">AR</div>
+          <div>
+            <p class="text-sm font-bold text-zinc-900">Alex Rivera</p>
+            <p class="text-xs text-zinc-500">Co-Founder & CEO, NovaPay</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom CTA -->
+      <div class="mt-16 rounded-3xl bg-zinc-900 text-white p-8 sm:p-12 text-center">
+        <h2 class="text-2xl sm:text-3xl font-extrabold">Want results like this for your product?</h2>
+        <p class="mt-3 text-zinc-400 max-w-lg mx-auto text-sm sm:text-base">
+          Subscribe today and submit your first design or development request in under 5 minutes.
+        </p>
+        <div class="mt-7 flex flex-col sm:flex-row items-center justify-center gap-3">
+          <a href="index.html#pricing" class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-accent-500 hover:bg-accent-600 text-white font-bold text-sm transition">
+            View Membership Plans
+          </a>
+          <a href="index.html#book-call" class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-zinc-800 hover:bg-zinc-700 text-white font-bold text-sm transition">
+            Book 15-Min Intro Call
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="border-t border-stone-200 py-10 px-4 sm:px-6 text-sm text-zinc-500">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="font-bold text-zinc-900">StudioFlow Agency</p>
+      <div class="flex gap-6">
+        <a href="index.html#work" class="hover:text-zinc-900">Work</a>
+        <a href="index.html#pricing" class="hover:text-zinc-900">Pricing</a>
+        <a href="legal.html" class="hover:text-zinc-900">Terms & Privacy</a>
+      </div>
+      <p>&copy; 2026 StudioFlow. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
